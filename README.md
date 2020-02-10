@@ -8,10 +8,12 @@ https://swapi.co
 
 # Task
 1. Create an app from a template or from scratch
-2. Set up integration with the external API
+2. Set up integration with the external Star Wars API
 3. Display a list of Movies (Title and Episode number) and what year it was released
-4. Make a transition to a move view, where you display Title, Episode number, Release date, Top 5 characters Name, Gender and Species
+4. Make a transition to a movie view, where you display Title, Episode number, Release date, Top 5 characters Name, Gender and Species
 
 # Optional Tasks
+* Make cool design for this!
 * Make unit tests for the code
 * Make the list of films sortable or searchable
+* Help us improve by sending us much welcomed feedback!
