@@ -16,4 +16,5 @@ https://swapi.co
 * Make cool design for this!
 * Make unit tests for the code
 * Make the list of films sortable or searchable
+* Use GraphQL/Apollo (SWAPI is available as GQL)
 * Help us improve by sending us much welcomed feedback!
