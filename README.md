@@ -1,12 +1,12 @@
-# work-at-albert
-This task is not meant to be a hard task, it is meant to gain some insight into candidates way of working and thinking. Therefore the level of ambition is very open to you. Recommended time frame is 2-3 hours. Feel free to use online resources or IDE to solve the problem, as long as you do not just copy-paste code. Libraries and similar is all fine to use.
+# Albert Code Test
+This task is not designed to be difficult. It is mainly tailored for us to gain insights into your way of thinking and working. Therefore, your level of ambition decides how much effort you put into it. The time frame we recommend is 2-3 hours. 
 
-We expect you to write the application as an app, and preferrably React, React Native or Expo (React Native)
+Feel free to use your favorite IDE, open source libraries and tools, and any online resource you'd like to solve the problem, as long as you do not copy-paste code.
+We expect you to write the application as an app in React or React Native with or without Expo.
 
-The task at hand is to integrate with an external api. Please see the documentation here:
-https://swapi.co
+# The task
+Your main task is to integrate a web site or an app with the external Star Wars API (https://swapi.co)
 
-# Task
 1. Create an app from a template or from scratch
 2. Set up integration with the external Star Wars API
 3. Display a list of Movies (Title and Episode number) and what year it was released
@@ -14,7 +14,7 @@ https://swapi.co
 
 # Optional Tasks
 * Make cool design for this!
-* Make unit tests for the code
+* Write automated tests for the code
 * Make the list of films sortable or searchable
-* Use GraphQL/Apollo (SWAPI is available as GQL)
-* Help us improve by sending us much welcomed feedback!
+
+And finally, please help us improve by sending us much welcomed feedback!
