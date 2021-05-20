@@ -4,7 +4,7 @@ This task is not designed to be difficult. It is mainly tailored for us to gain 
 Feel free to use your favorite IDE, open source libraries and tools, and any online resource you'd like to solve the problem, as long as you do not copy-paste code.
 
 # The task
-Your main task is to integrate a web site (React) or an app (React Native) with the external Star Wars API (https://swapi.co)
+Your main task is to integrate a web site (React) or an app (React Native) with the external Star Wars API (https://swapi.dev)
 
 1. Create an app from a template or from scratch. Use React or React Native with or without Expo.
 2. Set up integration with the external Star Wars API
