@@ -1,4 +1,4 @@
-# Albert Code Test
+# Albert Frontend Code Test
 This task is not designed to be difficult. It is mainly tailored for us to gain insights into your way of thinking and working. Therefore, your level of ambition decides how much effort you put into it. The timebox we recommend is 2-3 hours. 
 
 Feel free to use your favorite IDE, latest and greatest open source libraries and tools, and any online resource you'd like to solve the problem, as long as you do not copy-paste code.
