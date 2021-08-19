@@ -9,9 +9,9 @@ Your main task is to integrate a web site written in React with a backend in Nod
 1. Create an app from a template or from scratch. Use React, Node.js, and TypeScript.
 2. Set up integration with the external Star Wars API from the backend. Your frontend should only use the backend using custom APIs.
 3. Create a page where you display a list of People from the movies with name, age, and a couple of other basic properties about the person.
-3a. User should be able to sort the list by name and age
-3b. List should have pagination
-3c. Data for the list should be cached on the backend as it does not change very often.
+    * User should be able to sort the list by name and age
+    * List should have pagination
+    * Data for the list should be cached on the backend as it does not change very often.
 4. User should be able to click the name of the Person and transition to a Person page, where you display some basic properties and information about which species they belong to.
 
 Once done, please also upload a short video showing the final results in a browser.
