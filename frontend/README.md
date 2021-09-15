@@ -5,6 +5,7 @@ Feel free to use your favorite IDE, latest and greatest open source libraries an
 
 # The task
 Your main task is to integrate a web site (React) or an app (React Native) with the external Star Wars API (https://swapi.py4e.com/)
+Please use TypeScript.
 
 1. Create an app from a template or from scratch. Use React or React Native
 2. Set up integration with the external Star Wars API
