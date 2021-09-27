@@ -1,0 +1,45 @@
+{
+  "data": {
+    "allFilms": {
+      "totalCount": 6,
+      "films": [
+        {
+          "episodeID": 4,
+          "title": "A New Hope",
+          "id": "ZmlsbXM6MQ==",
+          "releaseDate": "1977-05-25"
+        },
+        {
+          "episodeID": 5,
+          "title": "The Empire Strikes Back",
+          "id": "ZmlsbXM6Mg==",
+          "releaseDate": "1980-05-17"
+        },
+        {
+          "episodeID": 6,
+          "title": "Return of the Jedi",
+          "id": "ZmlsbXM6Mw==",
+          "releaseDate": "1983-05-25"
+        },
+        {
+          "episodeID": 1,
+          "title": "The Phantom Menace",
+          "id": "ZmlsbXM6NA==",
+          "releaseDate": "1999-05-19"
+        },
+        {
+          "episodeID": 2,
+          "title": "Attack of the Clones",
+          "id": "ZmlsbXM6NQ==",
+          "releaseDate": "2002-05-16"
+        },
+        {
+          "episodeID": 3,
+          "title": "Revenge of the Sith",
+          "id": "ZmlsbXM6Ng==",
+          "releaseDate": "2005-05-19"
+        }
+      ]
+    }
+  }
+}

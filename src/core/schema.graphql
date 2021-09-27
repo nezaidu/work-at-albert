@@ -1,0 +1,12 @@
+enum SortingDirection {
+  DESC
+  ASC
+}
+
+type Meta {
+  filmsSortingDirection: SortingDirection
+}
+
+type Root {
+  meta: Meta
+}

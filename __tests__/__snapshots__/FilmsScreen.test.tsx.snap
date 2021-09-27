@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fetches films 1`] = `
+<RCTScrollView
+  ListHeaderComponent={[Function]}
+  data={
+    Array [
+      Object {
+        "episodeID": 4,
+        "id": "ZmlsbXM6MQ==",
+        "releaseDate": "1977-05-25",
+        "title": "A New Hope",
+      },
+      Object {
+        "episodeID": 5,
+        "id": "ZmlsbXM6Mg==",
+        "releaseDate": "1980-05-17",
+        "title": "The Empire Strikes Back",
+      },
+      Object {
+        "episodeID": 6,
+        "id": "ZmlsbXM6Mw==",
+        "releaseDate": "1983-05-25",
+        "title": "Return of the Jedi",
+      },
+      Object {
+        "episodeID": 1,
+        "id": "ZmlsbXM6NA==",
+        "releaseDate": "1999-05-19",
+        "title": "The Phantom Menace",
+      },
+      Object {
+        "episodeID": 2,
+        "id": "ZmlsbXM6NQ==",
+        "releaseDate": "2002-05-16",
+        "title": "Attack of the Clones",
+      },
+      Object {
+        "episodeID": 3,
+        "id": "ZmlsbXM6Ng==",
+        "releaseDate": "2005-05-19",
+        "title": "Revenge of the Sith",
+      },
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  keyExtractor={[Function]}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={Array []}
+  viewabilityConfigCallbackPairs={Array []}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+    >
+      <View>
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          nativeID="animatedComponent"
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <Text>
+            ASC
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View>
+        <Text>
+          A New Hope
+        </Text>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View>
+        <Text>
+          The Empire Strikes Back
+        </Text>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View>
+        <Text>
+          Return of the Jedi
+        </Text>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View>
+        <Text>
+          The Phantom Menace
+        </Text>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View>
+        <Text>
+          Attack of the Clones
+        </Text>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View>
+        <Text>
+          Revenge of the Sith
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

@@ -1,0 +1,15 @@
+query Films {
+  allFilms {
+    films {
+      episodeID
+      title
+      releaseDate
+    }
+  }
+}
+
+query Meta {
+  meta {
+    filmsSortingDirection
+  }
+}

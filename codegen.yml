@@ -1,0 +1,15 @@
+schema:
+  - src/generated/schema.graphql:
+  - src/core/schema.graphql:
+generates:
+  src/generated/type.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
+    config:
+      rawRequest: true
+      withHooks: true
+    documents:
+      - src/operations/queries.graphql
+
