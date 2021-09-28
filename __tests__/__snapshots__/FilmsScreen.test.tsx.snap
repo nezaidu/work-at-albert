@@ -57,6 +57,20 @@ exports[`fetches films 1`] = `
   renderItem={[Function]}
   scrollEventThrottle={50}
   stickyHeaderIndices={Array []}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "white",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+      Object {
+        "padding": 10,
+      },
+    ]
+  }
   viewabilityConfigCallbackPairs={Array []}
 >
   <View>
@@ -83,9 +97,64 @@ exports[`fetches films 1`] = `
           }
           testID="toggle-sorting-button"
         >
-          <Text>
-            ASC
-          </Text>
+          <View
+            style={
+              Array [
+                Object {
+                  "borderRadius": 1,
+                  "flexDirection": "row",
+                  "paddingBottom": 10,
+                  "paddingLeft": 0,
+                  "paddingRight": 10,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "borderRadius": 1,
+                    "marginLeft": -8,
+                    "marginRight": -8,
+                    "marginTop": -8,
+                    "shadowColor": "#0339C9",
+                    "shadowOffset": Object {
+                      "height": 0,
+                      "width": 0,
+                    },
+                    "shadowOpacity": 1,
+                    "shadowRadius": 12,
+                  },
+                ]
+              }
+            >
+              <SvgMock />
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#817156",
+                    "fontFamily": "Star Jedi Rounded",
+                    "fontSize": 18,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "lineHeight": 16,
+                    "paddingBottom": 10,
+                    "paddingLeft": 10,
+                    "paddingRight": 10,
+                    "paddingTop": 10,
+                  },
+                ]
+              }
+            >
+              1977
+              ...
+              2005
+            </Text>
+          </View>
         </View>
       </View>
     </View>
@@ -107,14 +176,83 @@ exports[`fetches films 1`] = `
         onStartShouldSetResponder={[Function]}
         style={
           Object {
+            "backgroundColor": "#F5ED17",
+            "borderColor": "#0339C9",
+            "borderRadius": 1,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "marginBottom": 15,
             "opacity": 1,
+            "shadowColor": "#000000",
+            "shadowOffset": Object {
+              "height": 0,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 3,
           }
         }
       >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#817156",
+                "fontFamily": "Star Jedi Rounded",
+                "fontSize": 22,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 18,
+                "paddingBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 10,
+              },
+            ]
+          }
+        >
+          4
+        </Text>
         <View>
-          <Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#010103",
+                  "fontFamily": "Star Jedi Rounded",
+                  "fontSize": 20,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "lineHeight": 18,
+                  "paddingBottom": 0,
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
             A New Hope
           </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#010103",
+                  "fontFamily": "SerifGothic LT",
+                  "fontSize": 16,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "lineHeight": 14,
+                  "paddingLeft": 10,
+                  "paddingTop": 3,
+                },
+              ]
+            }
+          >
+            1977
+          </Text>
         </View>
       </View>
     </View>
@@ -136,14 +274,83 @@ exports[`fetches films 1`] = `
         onStartShouldSetResponder={[Function]}
         style={
           Object {
+            "backgroundColor": "#F5ED17",
+            "borderColor": "#0339C9",
+            "borderRadius": 1,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "marginBottom": 15,
             "opacity": 1,
+            "shadowColor": "#000000",
+            "shadowOffset": Object {
+              "height": 0,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 3,
           }
         }
       >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#817156",
+                "fontFamily": "Star Jedi Rounded",
+                "fontSize": 22,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 18,
+                "paddingBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 10,
+              },
+            ]
+          }
+        >
+          5
+        </Text>
         <View>
-          <Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#010103",
+                  "fontFamily": "Star Jedi Rounded",
+                  "fontSize": 20,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "lineHeight": 18,
+                  "paddingBottom": 0,
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
             The Empire Strikes Back
           </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#010103",
+                  "fontFamily": "SerifGothic LT",
+                  "fontSize": 16,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "lineHeight": 14,
+                  "paddingLeft": 10,
+                  "paddingTop": 3,
+                },
+              ]
+            }
+          >
+            1980
+          </Text>
         </View>
       </View>
     </View>
@@ -165,14 +372,83 @@ exports[`fetches films 1`] = `
         onStartShouldSetResponder={[Function]}
         style={
           Object {
+            "backgroundColor": "#F5ED17",
+            "borderColor": "#0339C9",
+            "borderRadius": 1,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "marginBottom": 15,
             "opacity": 1,
+            "shadowColor": "#000000",
+            "shadowOffset": Object {
+              "height": 0,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 3,
           }
         }
       >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#817156",
+                "fontFamily": "Star Jedi Rounded",
+                "fontSize": 22,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 18,
+                "paddingBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 10,
+              },
+            ]
+          }
+        >
+          6
+        </Text>
         <View>
-          <Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#010103",
+                  "fontFamily": "Star Jedi Rounded",
+                  "fontSize": 20,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "lineHeight": 18,
+                  "paddingBottom": 0,
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
             Return of the Jedi
           </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#010103",
+                  "fontFamily": "SerifGothic LT",
+                  "fontSize": 16,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "lineHeight": 14,
+                  "paddingLeft": 10,
+                  "paddingTop": 3,
+                },
+              ]
+            }
+          >
+            1983
+          </Text>
         </View>
       </View>
     </View>
@@ -194,42 +470,82 @@ exports[`fetches films 1`] = `
         onStartShouldSetResponder={[Function]}
         style={
           Object {
+            "backgroundColor": "#F5ED17",
+            "borderColor": "#0339C9",
+            "borderRadius": 1,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "marginBottom": 15,
             "opacity": 1,
+            "shadowColor": "#000000",
+            "shadowOffset": Object {
+              "height": 0,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 3,
           }
         }
       >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#817156",
+                "fontFamily": "Star Jedi Rounded",
+                "fontSize": 22,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 18,
+                "paddingBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 10,
+              },
+            ]
+          }
+        >
+          1
+        </Text>
         <View>
-          <Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#010103",
+                  "fontFamily": "Star Jedi Rounded",
+                  "fontSize": 20,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "lineHeight": 18,
+                  "paddingBottom": 0,
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
             The Phantom Menace
           </Text>
-        </View>
-      </View>
-    </View>
-    <View
-      onLayout={[Function]}
-      style={null}
-    >
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        nativeID="animatedComponent"
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-      >
-        <View>
-          <Text>
-            Attack of the Clones
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#010103",
+                  "fontFamily": "SerifGothic LT",
+                  "fontSize": 16,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "lineHeight": 14,
+                  "paddingLeft": 10,
+                  "paddingTop": 3,
+                },
+              ]
+            }
+          >
+            1999
           </Text>
         </View>
       </View>
@@ -252,13 +568,180 @@ exports[`fetches films 1`] = `
         onStartShouldSetResponder={[Function]}
         style={
           Object {
+            "backgroundColor": "#F5ED17",
+            "borderColor": "#0339C9",
+            "borderRadius": 1,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "marginBottom": 15,
             "opacity": 1,
+            "shadowColor": "#000000",
+            "shadowOffset": Object {
+              "height": 0,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 3,
           }
         }
       >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#817156",
+                "fontFamily": "Star Jedi Rounded",
+                "fontSize": 22,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 18,
+                "paddingBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 10,
+              },
+            ]
+          }
+        >
+          2
+        </Text>
         <View>
-          <Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#010103",
+                  "fontFamily": "Star Jedi Rounded",
+                  "fontSize": 20,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "lineHeight": 18,
+                  "paddingBottom": 0,
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
+            Attack of the Clones
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#010103",
+                  "fontFamily": "SerifGothic LT",
+                  "fontSize": 16,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "lineHeight": 14,
+                  "paddingLeft": 10,
+                  "paddingTop": 3,
+                },
+              ]
+            }
+          >
+            2002
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#F5ED17",
+            "borderColor": "#0339C9",
+            "borderRadius": 1,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "marginBottom": 15,
+            "opacity": 1,
+            "shadowColor": "#000000",
+            "shadowOffset": Object {
+              "height": 0,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 3,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#817156",
+                "fontFamily": "Star Jedi Rounded",
+                "fontSize": 22,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 18,
+                "paddingBottom": 10,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 10,
+              },
+            ]
+          }
+        >
+          3
+        </Text>
+        <View>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#010103",
+                  "fontFamily": "Star Jedi Rounded",
+                  "fontSize": 20,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "lineHeight": 18,
+                  "paddingBottom": 0,
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
+                  "paddingTop": 10,
+                },
+              ]
+            }
+          >
             Revenge of the Sith
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#010103",
+                  "fontFamily": "SerifGothic LT",
+                  "fontSize": 16,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "lineHeight": 14,
+                  "paddingLeft": 10,
+                  "paddingTop": 3,
+                },
+              ]
+            }
+          >
+            2005
           </Text>
         </View>
       </View>

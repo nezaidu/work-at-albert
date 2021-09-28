@@ -14,7 +14,7 @@ interface FilmProps {
 }
 
 const FilmItem: FC<FilmProps> = ({ film }) => {
-  const nav = useNavigation();
+  const nav = useNavigation('Films');
   return (
     <FilmCard onPress={() => nav.push({
       component: {

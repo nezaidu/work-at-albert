@@ -3,16 +3,88 @@
 exports[`render film 1`] = `
 <View
   style={
-    Object {
-      "backgroundColor": "wheat",
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "backgroundColor": "white",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
   }
 >
-  <Text />
-  <Text />
-  <Text>
-    Today at 4:27 AM
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "row",
+        },
+      ]
+    }
+  >
+    <View>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#010103",
+              "fontFamily": "Star Jedi Rounded",
+              "fontSize": 22,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 20,
+              "paddingBottom": 0,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 3,
+            },
+          ]
+        }
+      />
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#010103",
+              "fontFamily": "SerifGothic LT",
+              "fontSize": 16,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 14,
+              "paddingLeft": 10,
+              "paddingTop": 3,
+            },
+          ]
+        }
+      >
+        Today at 3:44 PM
+      </Text>
+    </View>
+  </View>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#010103",
+          "fontFamily": "StarJedi Special Edition",
+          "fontSize": 22,
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "lineHeight": 18,
+          "marginTop": 10,
+          "paddingBottom": 0,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+        },
+      ]
+    }
+  >
+    Cast
   </Text>
 </View>
 `;

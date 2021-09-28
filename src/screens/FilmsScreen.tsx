@@ -50,7 +50,7 @@ export const useSorting: UseSorting = () => {
   const { data } = useMetaQuery({
     fetchPolicy: 'cache-only',
   });
-  console.log(data);
+
   const sortingDirection = data?.meta?.filmsSortingDirection || SortingDirection.Asc;
 
   const toggleSorting = () => {

@@ -64,6 +64,20 @@ exports[`render films 1`] = `
   renderItem={[Function]}
   scrollEventThrottle={50}
   stickyHeaderIndices={Array []}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "white",
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+      Object {
+        "padding": 10,
+      },
+    ]
+  }
   viewabilityConfigCallbackPairs={Array []}
 >
   <View>
@@ -89,11 +103,7 @@ exports[`render films 1`] = `
             }
           }
           testID="toggle-sorting-button"
-        >
-          <Text>
-            ASC
-          </Text>
-        </View>
+        />
       </View>
     </View>
   </View>
