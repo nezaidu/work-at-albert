@@ -73,9 +73,6 @@ exports[`render films 1`] = `
         "paddingRight": 10,
         "paddingTop": 10,
       },
-      Object {
-        "padding": 10,
-      },
     ]
   }
   viewabilityConfigCallbackPairs={Array []}

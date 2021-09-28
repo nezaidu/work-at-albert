@@ -78,7 +78,7 @@ export const useSorting: UseSorting = () => {
 };
 
 const FilmsScreen: NavigationFunctionComponent<NavigationComponentProps> =
-  () => {
+  ({componentId}) => {
     const {sortingDirection, toggleSorting} = useSorting();
 
     const films = useFilms(sortingDirection);
@@ -86,6 +86,7 @@ const FilmsScreen: NavigationFunctionComponent<NavigationComponentProps> =
     return (
       <Films
         data={films}
+        componentId={componentId}
         toggleSorting={toggleSorting}
         sortingDirection={sortingDirection}
       />

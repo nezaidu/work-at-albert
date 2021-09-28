@@ -1,7 +1,7 @@
 import moment from 'moment';
 import React, {FC} from 'react';
 import {View, TouchableOpacity} from 'react-native';
-import {useNavigation} from 'react-native-navigation-hooks/dist';
+import {NavigationContext, useNavigation} from 'react-native-navigation-hooks/dist';
 import {SmTitleText, SubtitleText, TitleText} from '../../ui';
 import {Film as FilmType, SortingDirection} from '../generated/type';
 import {
@@ -16,10 +16,12 @@ import DescendingIcon from '../../assets/icons/Desc.svg';
 
 interface FilmProps {
   film: FilmType;
+  componentId: string;
 }
 
-const FilmItem: FC<FilmProps> = ({film}) => {
-  const nav = useNavigation('Films');
+const FilmItem: FC<FilmProps> = ({film, componentId}) => {
+  const nav = useNavigation(componentId);
+
   return (
     <FilmCard
       onPress={() =>
@@ -43,15 +45,16 @@ const FilmItem: FC<FilmProps> = ({film}) => {
 
 interface FilmsProps {
   data: FilmType[];
+  componentId: string;
   sortingDirection: SortingDirection;
   toggleSorting: () => SortingDirection;
 }
 
-const Films: FC<FilmsProps> = ({data, sortingDirection, toggleSorting}) => {
+const Films: FC<FilmsProps> = ({data, sortingDirection, toggleSorting, componentId}) => {
   return (
     <FilmsList<FilmType>
       data={data}
-      renderItem={({item}) => <FilmItem key={item.episodeID} film={item} />}
+      renderItem={({item}) => <FilmItem componentId={componentId} key={item.episodeID} film={item} />}
       ListHeaderComponent={() => (
         <View>
           <TouchableOpacity
