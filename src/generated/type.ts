@@ -1322,8 +1322,32 @@ export type FilmsQuery = (
     { __typename?: 'FilmsConnection' }
     & { films?: Maybe<Array<Maybe<(
       { __typename?: 'Film' }
-      & Pick<Film, 'episodeID' | 'title' | 'releaseDate'>
+      & Pick<Film, 'episodeID' | 'title' | 'releaseDate' | 'id'>
     )>>> }
+  )> }
+);
+
+export type FilmQueryVariables = Exact<{
+  id: Scalars['ID'];
+}>;
+
+
+export type FilmQuery = (
+  { __typename?: 'Root' }
+  & { film?: Maybe<(
+    { __typename?: 'Film' }
+    & Pick<Film, 'id' | 'title' | 'episodeID' | 'releaseDate'>
+    & { characterConnection?: Maybe<(
+      { __typename?: 'FilmCharactersConnection' }
+      & { characters?: Maybe<Array<Maybe<(
+        { __typename?: 'Person' }
+        & Pick<Person, 'gender'>
+        & { species?: Maybe<(
+          { __typename?: 'Species' }
+          & Pick<Species, 'name'>
+        )> }
+      )>>> }
+    )> }
   )> }
 );
 
@@ -1346,6 +1370,7 @@ export const FilmsDocument = gql`
       episodeID
       title
       releaseDate
+      id
     }
   }
 }
@@ -1377,6 +1402,52 @@ export function useFilmsLazyQuery(baseOptions?: Apollo.LazyQueryHookOptions<Film
 export type FilmsQueryHookResult = ReturnType<typeof useFilmsQuery>;
 export type FilmsLazyQueryHookResult = ReturnType<typeof useFilmsLazyQuery>;
 export type FilmsQueryResult = Apollo.QueryResult<FilmsQuery, FilmsQueryVariables>;
+export const FilmDocument = gql`
+    query Film($id: ID!) {
+  film(id: $id) {
+    id
+    title
+    episodeID
+    releaseDate
+    characterConnection(first: 5) {
+      characters {
+        gender
+        species {
+          name
+        }
+      }
+    }
+  }
+}
+    `;
+
+/**
+ * __useFilmQuery__
+ *
+ * To run a query within a React component, call `useFilmQuery` and pass it any options that fit your needs.
+ * When your component renders, `useFilmQuery` returns an object from Apollo Client that contains loading, error, and data properties
+ * you can use to render your UI.
+ *
+ * @param baseOptions options that will be passed into the query, supported options are listed on: https://www.apollographql.com/docs/react/api/react-hooks/#options;
+ *
+ * @example
+ * const { data, loading, error } = useFilmQuery({
+ *   variables: {
+ *      id: // value for 'id'
+ *   },
+ * });
+ */
+export function useFilmQuery(baseOptions: Apollo.QueryHookOptions<FilmQuery, FilmQueryVariables>) {
+        const options = {...defaultOptions, ...baseOptions}
+        return Apollo.useQuery<FilmQuery, FilmQueryVariables>(FilmDocument, options);
+      }
+export function useFilmLazyQuery(baseOptions?: Apollo.LazyQueryHookOptions<FilmQuery, FilmQueryVariables>) {
+          const options = {...defaultOptions, ...baseOptions}
+          return Apollo.useLazyQuery<FilmQuery, FilmQueryVariables>(FilmDocument, options);
+        }
+export type FilmQueryHookResult = ReturnType<typeof useFilmQuery>;
+export type FilmLazyQueryHookResult = ReturnType<typeof useFilmLazyQuery>;
+export type FilmQueryResult = Apollo.QueryResult<FilmQuery, FilmQueryVariables>;
 export const MetaDocument = gql`
     query Meta {
   meta {

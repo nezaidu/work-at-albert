@@ -1,7 +1,7 @@
 import React from 'react';
 import {
-  NavigationComponent,
   NavigationComponentProps,
+  NavigationFunctionComponent,
 } from 'react-native-navigation';
 import {
   Film,
@@ -13,36 +13,29 @@ import {
 import Films from '../components/Films';
 import {cache} from '../core';
 import moment from 'moment';
+import { fonts } from '../../ui';
 
 type UseFilms = (d: SortingDirection) => Film[];
 
 export const useFilms: UseFilms = (direction: SortingDirection) => {
-  const {data, error} = useFilmsQuery({
-    fetchPolicy: 'network-only'
+  const {data} = useFilmsQuery({
+    fetchPolicy: 'cache-and-network'
   });
 
   let films = (data?.allFilms?.films || []) as Film[];
   const newFilms = [...films];
-  console.log(error);
-  console.log(error);
-  console.log(data);
-  console.log(data);
-  console.log(data);
+
   switch (direction) {
     case SortingDirection.Asc:
       return newFilms.sort(
         (f1, f2) =>
           moment(f1.releaseDate).unix() - moment(f2.releaseDate).unix(),
       );
-      // console.log(newFilms[0].episodeID + direction);
-      return newFilms;
     case SortingDirection.Desc:
       return newFilms.sort(
         (f1, f2) =>
           moment(f2.releaseDate).unix() - moment(f1.releaseDate).unix(),
       );
-      // console.log(newFilms[0].episodeID + direction);
-      return newFilms;
     default:
       return newFilms;
   }
@@ -54,7 +47,7 @@ type UseSorting = () => {
 };
 
 export const useSorting: UseSorting = () => {
-  const { data, refetch } = useMetaQuery({
+  const { data } = useMetaQuery({
     fetchPolicy: 'cache-only',
   });
   console.log(data);
@@ -80,22 +73,35 @@ export const useSorting: UseSorting = () => {
   return {
     sortingDirection,
     toggleSorting,
-  }
+  };
 };
 
-const FilmsScreen: NavigationComponent<NavigationComponentProps> = () => {
+const FilmsScreen: NavigationFunctionComponent<NavigationComponentProps> = () => {
   const {sortingDirection, toggleSorting} = useSorting();
 
   const films = useFilms(sortingDirection);
 
   return (
     <Films
-      data={films}
-      toggleSorting={toggleSorting}
-      sortingDirection={sortingDirection}
+        data={films}
+        toggleSorting={toggleSorting}
+        sortingDirection={sortingDirection}
     />
   )
 };
 
+
+FilmsScreen.options = {
+  topBar: {
+    background: {
+      color: '#F5ED17',
+    },
+    title: {
+      text: "Star Wars",
+      fontFamily: fonts.distant,
+      fontWeight: '900'
+    }
+  }
+}
 
 export default FilmsScreen;

@@ -81,6 +81,7 @@ exports[`fetches films 1`] = `
               "opacity": 1,
             }
           }
+          testID="toggle-sorting-button"
         >
           <Text>
             ASC
@@ -92,60 +93,174 @@ exports[`fetches films 1`] = `
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <Text>
-          A New Hope
-        </Text>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View>
+          <Text>
+            A New Hope
+          </Text>
+        </View>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <Text>
-          The Empire Strikes Back
-        </Text>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View>
+          <Text>
+            The Empire Strikes Back
+          </Text>
+        </View>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <Text>
-          Return of the Jedi
-        </Text>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View>
+          <Text>
+            Return of the Jedi
+          </Text>
+        </View>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <Text>
-          The Phantom Menace
-        </Text>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View>
+          <Text>
+            The Phantom Menace
+          </Text>
+        </View>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <Text>
-          Attack of the Clones
-        </Text>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View>
+          <Text>
+            Attack of the Clones
+          </Text>
+        </View>
       </View>
     </View>
     <View
       onLayout={[Function]}
       style={null}
     >
-      <View>
-        <Text>
-          Revenge of the Sith
-        </Text>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View>
+          <Text>
+            Revenge of the Sith
+          </Text>
+        </View>
       </View>
     </View>
   </View>

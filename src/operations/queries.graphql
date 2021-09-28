@@ -4,10 +4,28 @@ query Films {
       episodeID
       title
       releaseDate
+      id
     }
   }
 }
 
+query Film($id: ID!) {
+  film(id: $id) {
+    id
+    title
+    episodeID
+    releaseDate
+    characterConnection(first: 5) {
+      characters {
+        gender
+        name
+        species {
+          name
+        }
+      }
+    }
+  }
+}
 query Meta {
   meta {
     filmsSortingDirection

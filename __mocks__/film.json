@@ -1,0 +1,38 @@
+{
+  "data": {
+    "film": {
+      "id": "ZmlsbXM6MQ==",
+      "title": "A New Hope",
+      "episodeID": 4,
+      "releaseDate": "1977-05-25",
+      "characterConnection": {
+        "characters": [
+          {
+            "gender": "male",
+            "species": null
+          },
+          {
+            "gender": "n/a",
+            "species": {
+              "name": "Droid"
+            }
+          },
+          {
+            "gender": "n/a",
+            "species": {
+              "name": "Droid"
+            }
+          },
+          {
+            "gender": "male",
+            "species": null
+          },
+          {
+            "gender": "female",
+            "species": null
+          }
+        ]
+      }
+    }
+  }
+}

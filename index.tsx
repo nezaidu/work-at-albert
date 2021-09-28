@@ -5,9 +5,11 @@ import React from 'react';
 import initClient, { client } from './src/core';
 
 import FilmsScreen from "./src/screens/FilmsScreen";
+import FilmScreen from "./src/screens/FilmScreen";
 
-enum screens {
+export enum screens {
   films = 'Films',
+  film = 'Film',
 }
 export function registerComponent<P>(
   name: string,
@@ -26,6 +28,7 @@ export function registerComponent<P>(
 }
 
 registerComponent(screens.films, FilmsScreen);
+registerComponent(screens.film, FilmScreen);
 
 Navigation.events().registerAppLaunchedListener(async () => {
   await initClient();
