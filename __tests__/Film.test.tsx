@@ -13,11 +13,7 @@ import Film from '../src/components/Film';
 const film: FilmType = filmJSON as unknown as FilmType;
 
 it('render film', () => {
-  const {toJSON} = render(
-    <Film
-      film={film}
-    />,
-  );
+  const {toJSON} = render(<Film film={film} />);
 
   const tree = toJSON();
 

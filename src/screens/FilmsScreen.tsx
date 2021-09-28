@@ -13,16 +13,16 @@ import {
 import Films from '../components/Films';
 import {cache} from '../core';
 import moment from 'moment';
-import { fonts } from '../../ui';
+import {fonts} from '../../ui';
 
 type UseFilms = (d: SortingDirection) => Film[];
 
 export const useFilms: UseFilms = (direction: SortingDirection) => {
   const {data} = useFilmsQuery({
-    fetchPolicy: 'cache-and-network'
+    fetchPolicy: 'cache-and-network',
   });
 
-  let films = (data?.allFilms?.films || []) as Film[];
+  const films = (data?.allFilms?.films || []) as Film[];
   const newFilms = [...films];
 
   switch (direction) {
@@ -47,11 +47,12 @@ type UseSorting = () => {
 };
 
 export const useSorting: UseSorting = () => {
-  const { data } = useMetaQuery({
+  const {data} = useMetaQuery({
     fetchPolicy: 'cache-only',
   });
 
-  const sortingDirection = data?.meta?.filmsSortingDirection || SortingDirection.Asc;
+  const sortingDirection =
+    data?.meta?.filmsSortingDirection || SortingDirection.Asc;
 
   const toggleSorting = () => {
     const newDirection =
@@ -64,8 +65,8 @@ export const useSorting: UseSorting = () => {
       data: {
         meta: {
           filmsSortingDirection: newDirection,
-        }
-      }
+        },
+      },
     });
     return newDirection;
   };
@@ -76,20 +77,20 @@ export const useSorting: UseSorting = () => {
   };
 };
 
-const FilmsScreen: NavigationFunctionComponent<NavigationComponentProps> = () => {
-  const {sortingDirection, toggleSorting} = useSorting();
+const FilmsScreen: NavigationFunctionComponent<NavigationComponentProps> =
+  () => {
+    const {sortingDirection, toggleSorting} = useSorting();
 
-  const films = useFilms(sortingDirection);
+    const films = useFilms(sortingDirection);
 
-  return (
-    <Films
+    return (
+      <Films
         data={films}
         toggleSorting={toggleSorting}
         sortingDirection={sortingDirection}
-    />
-  )
-};
-
+      />
+    );
+  };
 
 FilmsScreen.options = {
   topBar: {
@@ -97,13 +98,13 @@ FilmsScreen.options = {
       color: '#000000',
     },
     title: {
-      text: "Star Wars",
+      text: 'Star Wars',
       fontFamily: fonts.distant,
       fontSize: 22,
       fontWeight: '900',
       color: '#F5ED17',
-    }
-  }
-}
+    },
+  },
+};
 
 export default FilmsScreen;

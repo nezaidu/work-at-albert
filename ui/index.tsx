@@ -1,5 +1,5 @@
-/* eslint-disable react-native/no-inline-styles */
-import React, {FC, FunctionComponent} from 'react';
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import React from 'react';
 
 import styled from 'styled-components/native';
 

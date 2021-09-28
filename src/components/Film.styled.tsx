@@ -1,8 +1,9 @@
 /* eslint-disable react-native/no-inline-styles */
-import React, {FC, FunctionComponent} from 'react';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import React from 'react';
 
 import styled from 'styled-components/native';
-import { fonts, SmTitleText, SubtitleText, TitleText } from '../../ui';
+import {fonts, SmTitleText, SubtitleText} from '../../ui';
 
 export const FilmsList = styled.FlatList`
   padding: 10px;
@@ -45,9 +46,9 @@ export const CharacterDetailText = styled(SmTitleText)`
 `;
 
 export const CharacterCard = styled.TouchableOpacity`
-  background: #F5ED17;
+  background: #f5ed17;
   flex-direction: row;
-  border: 1px solid #0339C9;
+  border: 1px solid #0339c9;
   box-shadow: 0px 0px 3px #000000;
   border-radius: 1px;
   margin: 10px;
