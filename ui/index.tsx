@@ -8,6 +8,7 @@ export enum fonts {
   distant = 'SF Distant Galaxy',
   jedi = 'Star Jedi Rounded',
   special = 'StarJedi Special Edition',
+  hollow = 'Star Jedi Hollow',
 }
 
 export const SubtitleText = styled.Text`
@@ -28,8 +29,8 @@ export const TitleText = styled.Text`
   font-family: ${fonts.jedi};
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 16px;
+  font-size: 20px;
+  line-height: 18px;
   /* or 127% */
 
   padding: 10px;
@@ -45,6 +46,20 @@ export const SmTitleText = styled.Text`
   font-weight: normal;
   font-size: 16px;
   line-height: 14px;
+  /* or 127% */
+
+  /* Body Headline */
+  padding-top: 3px;
+  color: #010103;
+  padding-left: 10px;
+`;
+
+export const BgTitleText = styled(TitleText)`
+  font-family: ${fonts.jedi};
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 20px;
   /* or 127% */
 
   /* Body Headline */

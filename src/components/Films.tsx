@@ -5,8 +5,9 @@ import { useNavigation } from 'react-native-navigation-hooks/dist';
 import { SmTitleText, SubtitleText, TitleText } from '../../ui';
 // import { screens } from '../..';
 import { Film as FilmType, SortingDirection } from '../generated/type';
-import { FilmCard, FilmCountText, FilmsList, ToggleSortingView } from './Films.styled';
+import { FilmCard, FilmCountText, FilmsList, ToggleSortingIcon, ToggleSortingView } from './Films.styled';
 import AscendingIcon from '../../assets/icons/Asc.svg';
+import DescendingIcon from '../../assets/icons/Desc.svg';
 
 interface FilmProps {
   film: FilmType;
@@ -49,7 +50,10 @@ const Films: FC<FilmsProps> = ({ data, sortingDirection, toggleSorting }) => {
           <TouchableOpacity testID="toggle-sorting-button" onPress={toggleSorting}>
             {!!data.length && (
               <ToggleSortingView>
-                {/* <AscendingIcon /> */}
+                <ToggleSortingIcon>
+                  {sortingDirection === SortingDirection.Asc && <AscendingIcon />}
+                  {sortingDirection === SortingDirection.Desc && <DescendingIcon />}
+                </ToggleSortingIcon>
                 <SubtitleText>
                   {moment(data[0].releaseDate).local().year()}...
                   {moment(data[data.length - 1].releaseDate).local().year()}

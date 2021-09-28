@@ -1341,7 +1341,7 @@ export type FilmQuery = (
       { __typename?: 'FilmCharactersConnection' }
       & { characters?: Maybe<Array<Maybe<(
         { __typename?: 'Person' }
-        & Pick<Person, 'gender'>
+        & Pick<Person, 'gender' | 'name'>
         & { species?: Maybe<(
           { __typename?: 'Species' }
           & Pick<Species, 'name'>
@@ -1412,6 +1412,7 @@ export const FilmDocument = gql`
     characterConnection(first: 5) {
       characters {
         gender
+        name
         species {
           name
         }

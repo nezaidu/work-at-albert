@@ -18,6 +18,7 @@
 		6172F2D35A4C3AA820D92908 /* libPods-HiAlbert.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423831EA8574132BED9D8CC /* libPods-HiAlbert.a */; };
 		7EF68E3733C33B6898317E18 /* libPods-HiAlbert-HiAlbertTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE59519B596E51CEFDCCC0 /* libPods-HiAlbert-HiAlbertTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		CB6C1016983B480F8D5F1C94 /* StarJediHollow-A4lL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9006FD9B95E4024B55E8A01 /* StarJediHollow-A4lL.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		C0A881CF5CF3F2B244570E2A /* Pods-HiAlbert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiAlbert.debug.xcconfig"; path = "Target Support Files/Pods-HiAlbert/Pods-HiAlbert.debug.xcconfig"; sourceTree = "<group>"; };
 		CFCFCF5191714630AC2CB5B5 /* SfDistantGalaxy-0l3d.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SfDistantGalaxy-0l3d.ttf"; path = "../assets/fonts/SfDistantGalaxy-0l3d.ttf"; sourceTree = "<group>"; };
 		D00AAFFCFCFDA5787532823F /* Pods-HiAlbert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiAlbert.release.xcconfig"; path = "Target Support Files/Pods-HiAlbert/Pods-HiAlbert.release.xcconfig"; sourceTree = "<group>"; };
+		E9006FD9B95E4024B55E8A01 /* StarJediHollow-A4lL.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "StarJediHollow-A4lL.ttf"; path = "../assets/fonts/StarJediHollow-A4lL.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -164,6 +166,7 @@
 				2C1993C12702B2C100BE0190 /* StarjediSpecialEdition-9Bqy.ttf */,
 				2C1993C52702B2CB00BE0190 /* StarJediRounded-jW3R.ttf */,
 				CFCFCF5191714630AC2CB5B5 /* SfDistantGalaxy-0l3d.ttf */,
+				E9006FD9B95E4024B55E8A01 /* StarJediHollow-A4lL.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				5CF9BFCDF7A8443F9B79934C /* itc-serif-gothic-lt-regular.ttf in Resources */,
 				2C1993C62702B2CB00BE0190 /* StarJediRounded-jW3R.ttf in Resources */,
 				3FD36CE9DF7447099AFBDDEA /* SfDistantGalaxy-0l3d.ttf in Resources */,
+				CB6C1016983B480F8D5F1C94 /* StarJediHollow-A4lL.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

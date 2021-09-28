@@ -13,11 +13,12 @@ const FilmScreen: NavigationFunctionComponent<NavigationComponentProps> = ({ fil
   const { data } = useFilmQuery({
     variables: {
       id: film.id,
-    }
+    },
+    fetchPolicy: 'cache-and-network',
   });
 
   const fullFilm = data?.film || {};
-  console.log(fullFilm);
+
   return (
     <Film film={fullFilm} />
   )
@@ -26,13 +27,19 @@ const FilmScreen: NavigationFunctionComponent<NavigationComponentProps> = ({ fil
 
 FilmScreen.options = (props) => ({
   topBar: {
+    background: {
+      color: '#000000',
+    },
     backButton: {
       title: "Back",
+      color: '#F5ED17',
     },
     title: {
-      text: props.film.title,
+      text: `Episode ${props.film.episodeID}`,
       fontFamily: fonts.distant,
-      fontWeight: '900'
+      fontSize: 22,
+      fontWeight: '900',
+      color: '#F5ED17',
     }
   }
 });

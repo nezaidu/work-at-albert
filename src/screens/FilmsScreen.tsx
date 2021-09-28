@@ -94,12 +94,14 @@ const FilmsScreen: NavigationFunctionComponent<NavigationComponentProps> = () =>
 FilmsScreen.options = {
   topBar: {
     background: {
-      color: '#F5ED17',
+      color: '#000000',
     },
     title: {
       text: "Star Wars",
       fontFamily: fonts.distant,
-      fontWeight: '900'
+      fontSize: 22,
+      fontWeight: '900',
+      color: '#F5ED17',
     }
   }
 }
